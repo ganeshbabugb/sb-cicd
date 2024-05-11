@@ -58,7 +58,7 @@
                     <configuration>
                         <to>
                             <image>
-                                872183645441.dkr.ecr.ap-south-1.amazonaws.comclear/${project.artifactId}:${project.version}
+                                872183645441.dkr.ecr.ap-south-1.amazonaws.com/sb-cicd
                             </image>
                         </to>
                     </configuration>
