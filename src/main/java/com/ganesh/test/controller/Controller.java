@@ -20,8 +20,14 @@ public class Controller {
         return Map.of("Testing", "Working Fine Ganesh!");
     }
 
-    @GetMapping(value = "/test2", params = "v=2")
+    @GetMapping(value = "/test", params = "v=2")
     public Map<String, String> test2() {
         return Map.of("Testing Version 2", "Working Fine Ganesh babu!");
     }
+
+    @GetMapping(value = "/test", params = "v=3")
+    public Map<String, String> test3() {
+        return Map.of("Hea Yu", "Go Sleep!");
+    }
+
 }
