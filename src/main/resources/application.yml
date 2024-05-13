@@ -1,12 +1,14 @@
+#SPRING BOOT
 spring:
   application:
     name: Test
 
-# AWS
-# ADD YOUR CREDENTIALS HERE FOR ACCESSING S3 BUCKET
-aws:
-  s3:
-    access-key: ${AWS_ACCESS_KEY_ID}
-    secret-key: ${AWS_SECRET_ACCESS_KEY}
-    bucket: ${S3_BUCKET}
-    region: ${AWS_REGION}
+# ACTUATOR
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*" # heath, info, env
+  endpoint:
+    env:
+      show-values: always

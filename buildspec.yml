@@ -15,11 +15,6 @@ phases:
   build:
     commands:
       - echo Building and tagging started image on `date`
-      - echo Setting AWS S3 credentials....
-      - export AWS_ACCESS_KEY_ID=$SB_AWS_ACCESS_KEY_ID
-      - export AWS_SECRET_ACCESS_KEY=$SB_AWS_SECRET_ACCESS_KEY
-      - export AWS_REGION=$SB_AWS_REGION
-      - export S3_BUCKET=$SB_S3_BUCKET
       - echo Running Maven build with Jib...
       - mvn clean package jib:build -Djib.to.image=$REPOSITORY_URI:$IMAGE_TAG
 
